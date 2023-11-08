@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../2018_3_zedboard_P1.2.srcs/sources_1/new/Multi6x7.vhd" \
+"../../../../2018_3_zedboard_P1.2.srcs/sources_1/new/Multiplic_1.vhd" \
+"../../../../2018_3_zedboard_P1.2.srcs/sim_1/new/Multi6x7_tb.vhd" \
+
+# Do not sort compile order
+nosort
