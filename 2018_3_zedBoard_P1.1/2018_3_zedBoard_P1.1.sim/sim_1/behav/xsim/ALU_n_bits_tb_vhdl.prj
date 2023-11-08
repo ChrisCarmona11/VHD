@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../2018_3_zedBoard_P1.1.srcs/sources_1/new/FA.vhd" \
+"../../../../2018_3_zedBoard_P1.1.srcs/sources_1/new/MUX2to1.vhd" \
+"../../../../2018_3_zedBoard_P1.1.srcs/sources_1/new/MUX4to1.vhd" \
+"../../../../2018_3_zedBoard_P1.1.srcs/sources_1/new/XOR2.vhd" \
+"../../../../2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_1_bit.vhd" \
+"../../../../2018_3_zedBoard_P1.1.srcs/sources_1/new/Logic_Unit.vhd" \
+"../../../../2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_n_bits.vhd" \
+"../../../../2018_3_zedBoard_P1.1.srcs/sim_1/new/ALU_n_bits_tb.vhd" \
+
+# Do not sort compile order
+nosort

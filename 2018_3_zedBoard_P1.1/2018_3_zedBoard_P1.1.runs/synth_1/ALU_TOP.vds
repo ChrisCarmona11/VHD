@@ -1,0 +1,316 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Oct 18 13:51:49 2023
+# Process ID: 18244
+# Current directory: C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.runs/synth_1
+# Command line: vivado.exe -log ALU_TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU_TOP.tcl
+# Log file: C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.runs/synth_1/ALU_TOP.vds
+# Journal file: C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ALU_TOP.tcl -notrace
+Command: synth_design -top ALU_TOP -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6020 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 385.230 ; gain = 99.160
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ALU_TOP' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_TOP.vhd:42]
+	Parameter bit_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ALU_n_bits' declared at 'C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_n_bits.vhd:34' bound to instance 'U1' of component 'ALU_n_bits' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_TOP.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'ALU_n_bits' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_n_bits.vhd:44]
+	Parameter bit_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ALU_1_bit' declared at 'C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_1_bit.vhd:34' bound to instance 'ALU_1_bit_u1' of component 'ALU_1_bit' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_n_bits.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'ALU_1_bit' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_1_bit.vhd:44]
+INFO: [Synth 8-3491] module 'XOR2' declared at 'C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/XOR2.vhd:25' bound to instance 'xor2_u1' of component 'XOR2' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_1_bit.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_XOR2' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/XOR2.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_XOR2' (1#1) [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/XOR2.vhd:31]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/FA.vhd:25' bound to instance 'fa_u1' of component 'FA' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_1_bit.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/FA.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'FA' (2#1) [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/FA.vhd:33]
+INFO: [Synth 8-3491] module 'Logic_Unit' declared at 'C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/Logic_Unit.vhd:34' bound to instance 'LogicUnit_u1' of component 'Logic_Unit' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_1_bit.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'Logic_Unit' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/Logic_Unit.vhd:43]
+INFO: [Synth 8-3491] module 'MUX2to1' declared at 'C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/MUX2to1.vhd:25' bound to instance 'mux2to1_u1' of component 'MUX2to1' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/Logic_Unit.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'MUX2to1' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/MUX2to1.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'MUX2to1' (3#1) [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/MUX2to1.vhd:32]
+INFO: [Synth 8-3491] module 'MUX2to1' declared at 'C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/MUX2to1.vhd:25' bound to instance 'mux2to1_u2' of component 'MUX2to1' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/Logic_Unit.vhd:61]
+INFO: [Synth 8-3491] module 'MUX4to1' declared at 'C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/MUX4to1.vhd:25' bound to instance 'mux4to1_u1' of component 'MUX4to1' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/Logic_Unit.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'MUX4to1' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/MUX4to1.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'MUX4to1' (4#1) [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/MUX4to1.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'Logic_Unit' (5#1) [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/Logic_Unit.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'ALU_1_bit' (6#1) [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_1_bit.vhd:44]
+INFO: [Synth 8-3491] module 'ALU_1_bit' declared at 'C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_1_bit.vhd:34' bound to instance 'ALU_1_bit_uN' of component 'ALU_1_bit' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_n_bits.vhd:61]
+INFO: [Synth 8-3491] module 'ALU_1_bit' declared at 'C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_1_bit.vhd:34' bound to instance 'ALU_1_bit_uN' of component 'ALU_1_bit' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_n_bits.vhd:61]
+INFO: [Synth 8-3491] module 'ALU_1_bit' declared at 'C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_1_bit.vhd:34' bound to instance 'ALU_1_bit_uN' of component 'ALU_1_bit' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_n_bits.vhd:61]
+INFO: [Synth 8-3491] module 'ALU_1_bit' declared at 'C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_1_bit.vhd:34' bound to instance 'ALU_1_bit_uN' of component 'ALU_1_bit' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_n_bits.vhd:61]
+INFO: [Synth 8-3491] module 'ALU_1_bit' declared at 'C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_1_bit.vhd:34' bound to instance 'ALU_1_bit_uN' of component 'ALU_1_bit' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_n_bits.vhd:61]
+INFO: [Synth 8-3491] module 'ALU_1_bit' declared at 'C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_1_bit.vhd:34' bound to instance 'ALU_1_bit_uN' of component 'ALU_1_bit' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_n_bits.vhd:61]
+INFO: [Synth 8-3491] module 'ALU_1_bit' declared at 'C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_1_bit.vhd:34' bound to instance 'ALU_1_bit_uN' of component 'ALU_1_bit' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_n_bits.vhd:61]
+INFO: [Synth 8-3491] module 'ALU_1_bit' declared at 'C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_1_bit.vhd:34' bound to instance 'ALU_1_bit_u9' of component 'ALU_1_bit' [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_n_bits.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'ALU_n_bits' (7#1) [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_n_bits.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'ALU_TOP' (8#1) [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/sources_1/new/ALU_TOP.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 441.367 ; gain = 155.297
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 441.367 ; gain = 155.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 441.367 ; gain = 155.297
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/constrs_1/imports/2018_3_zedBoard_P1.1/zedboard_master_XDC_RevC_D_v3.xdc]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/constrs_1/imports/2018_3_zedBoard_P1.1/zedboard_master_XDC_RevC_D_v3.xdc:372]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/constrs_1/imports/2018_3_zedBoard_P1.1/zedboard_master_XDC_RevC_D_v3.xdc:377]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 35]]'. [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/constrs_1/imports/2018_3_zedBoard_P1.1/zedboard_master_XDC_RevC_D_v3.xdc:382]
+Finished Parsing XDC File [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/constrs_1/imports/2018_3_zedBoard_P1.1/zedboard_master_XDC_RevC_D_v3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.srcs/constrs_1/imports/2018_3_zedBoard_P1.1/zedboard_master_XDC_RevC_D_v3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ALU_TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ALU_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 798.230 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 798.230 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 798.230 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 798.961 ; gain = 0.730
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 798.961 ; gain = 512.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 798.961 ; gain = 512.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 798.961 ; gain = 512.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 798.961 ; gain = 512.891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 9     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 18    
+	   4 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module xil_defaultlib_XOR2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module MUX2to1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module MUX4to1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 798.961 ; gain = 512.891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 798.961 ; gain = 512.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 798.961 ; gain = 512.891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 805.684 ; gain = 519.613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 805.684 ; gain = 519.613
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 805.684 ; gain = 519.613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 805.684 ; gain = 519.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 805.684 ; gain = 519.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 805.684 ; gain = 519.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 805.684 ; gain = 519.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT4 |     1|
+|2     |LUT5 |     5|
+|3     |LUT6 |     2|
+|4     |IBUF |    10|
+|5     |OBUF |     8|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    26|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 805.684 ; gain = 519.613
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 805.684 ; gain = 162.020
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 805.684 ; gain = 519.613
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 819.680 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 819.680 ; gain = 546.590
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 819.680 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/chris/Master/VHD/2018_3_zedBoard_P1.1/2018_3_zedBoard_P1.1.runs/synth_1/ALU_TOP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ALU_TOP_utilization_synth.rpt -pb ALU_TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 18 13:52:14 2023...
